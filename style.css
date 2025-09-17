@@ -1,0 +1,195 @@
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+
+header, footer {
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+header h1 a {
+    color: #333;
+}
+
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr;
+}
+
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+header nav a {
+    color: #555;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+
+section, aside, article {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+h2 {
+    color: #333;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article figure {
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+}
+
+figcaption {
+    font-style: italic;
+    font-size: 0.9em;
+    color: #666;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+
+article h3 a {
+    color: #333;
+    font-size: 1.8rem;
+    transition: color 0.3s ease;
+}
+
+article h3 a:hover {
+    color: #007bff;
+}
+
+
+mark {
+    background-color: #ffeb3b;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+    color: #333;
+}
+
+
+#characteristics {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+}
+
+#characteristics li {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-left: 4px solid #007bff;
+    margin-bottom: 0.5rem;
+    border-radius: 4px;
+}
+
+
+footer {
+    padding: 1.5rem;
+    border-top: 1px solid #ddd;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+footer nav a {
+    color: #555;
+    font-weight: 400;
+}
+
+footer nav a:hover {
+    color: #007bff;
+}
+
+
+@media (min-width: 768px) {
+    main {
+        grid-template-columns: 3fr 1fr;
+    }
+
+    main > section {
+        grid-column: 1 / 2;
+    }
+
+    main > aside {
+        grid-column: 2 / 3;
+    }
+
+    #main-content > section {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 2rem;
+        background: none;
+        box-shadow: none;
+        padding: 0;
+    }
+    
+    #main-content > section > article {
+        box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        background-color: #fff;
+        padding: 1.5rem;
+    }
+
+    article {
+        display: block;
+    }
+}
